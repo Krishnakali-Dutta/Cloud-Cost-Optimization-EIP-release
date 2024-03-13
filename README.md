@@ -26,6 +26,7 @@ aws lambda create-function --function-name Eip_release --zip-file file://lambda_
 Ensure that the IAM role associated with the Lambda function has the necessary permissions to describe and release Elastic IPs. Here's an example IAM policy:
 
 
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -39,3 +40,4 @@ Ensure that the IAM role associated with the Lambda function has the necessary p
         }
     ]
 }
+
